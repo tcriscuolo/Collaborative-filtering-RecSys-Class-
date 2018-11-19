@@ -19,7 +19,7 @@ typedef struct Bound{
 	int end;
 } Bound;
 
-// Create a partition for threats to work on
+// Create a partition for threads to work on
 static vector<Bound> bounds(const int &num_thread, const int &total_job){
 	int block_size = total_job/num_thread;
 
